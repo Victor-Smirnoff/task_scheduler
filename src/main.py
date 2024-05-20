@@ -11,10 +11,20 @@ app = FastAPI(
 )
 
 
+@app.on_event("startup")
+async def startup_event():
+    print("Приложение запущено...")
+
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    print("Приложение выключено...")
+
+
 @app.get("/")
 async def root():
     return {"message": "Test STRING!"}
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1", port=8080, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)
