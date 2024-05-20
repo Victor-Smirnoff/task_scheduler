@@ -7,7 +7,7 @@ app = FastAPI(
     title="Планировщик задач",
     docs_url="/api/docs",
     openapi_url="/api/docs/openapi.json",
-    default_response_class=ORJSONResponse
+    default_response_class=ORJSONResponse,
 )
 
 
