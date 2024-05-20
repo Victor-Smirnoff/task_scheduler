@@ -1,0 +1,10 @@
+.idea
+.venv
+venv
+.env*
+__pycache__/
+*.py[cod]
+*$py.class
+*.patch
+src/.mypy_cache/
+matetials
