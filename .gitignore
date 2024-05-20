@@ -8,3 +8,4 @@ __pycache__/
 *.patch
 src/.mypy_cache/
 matetials
+.flake8
