@@ -25,4 +25,4 @@ async def shutdown_event():
 
 @app.get("/")
 async def root():
-    return {"message": "Test STRING 777 !"}
+    return {"message": "Test STRING !"}
